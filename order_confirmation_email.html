@@ -54,32 +54,29 @@
               color: #333333;
             "
           >
-            Welcome to the Family
+            Order Confirmation
           </h1>
 
           <div style="padding-top: 10px">Dear {{ first_name }},</div>
           <div style="padding-top: 15px">
-            Welcome to Benji Nigeria’s most advanced multi-vendor e-commerce
-            platform, designed to revolutionize online shopping and seamless
-            delivery of goods. We're thrilled to have you as a part of our
-            community.
-          </div>
-          <div style="padding-top: 15px; text-align: start">
-            <ul>
-              <li>
-                Large curation of authentic products from your favorite vendors
-              </li>
-              <li>Convenient shopping experience</li>
-              <li>Easy navigation and user-friendly interface</li>
-              <li>Seamless delivery of purchases</li>
-              <li>Real time order tracking and updates</li>
-              <li>24/7 support</li>
-            </ul>
+            Your order has been successfully placed.
           </div>
           <div style="padding-top: 15px">
-            Shop conveniently anywhere anytime!
+            We're excited to confirm your recent order {{ order_id }} placed on
+            {{ order_date }} Here are the details:
           </div>
+          <div style="padding-top: 15px">Order Total: {{ total_amount }}</div>
+          <div style="padding-top: 15px">
+            Shipping Address: {{ shipping_address }}
+          </div>
+          <div style="padding-top: 15px">
+            You can track the status of your order by visiting your account
+            dashboard. We'll notify you once your order is delivered.
+          </div>
+          <div style="padding-top: 15px">Thank you for shopping with us!</div>
 
+          <div style="padding-top: 45px">Best regards,</div>
+          <div style="padding-top: 15px">Benji Team</div>
           <a
             href="https://benjiexpress.com"
             target="_blank"
@@ -236,18 +233,6 @@
             >Terms of Service
           </a>
         </div>
-        <!--
-        <div style="margin-top: 30px">
-          <span style="color: #cccccc; font-size: 12px">
-            No longer want to receive these emails?&nbsp;</span
-          ><a
-            href=""
-            target="_blank"
-            style="text-decoration: underline; color: #cccccc; font-size: 12px"
-            >Unsubscribe</a
-          >
-        </div>
-        -->
       </div>
     </div>
   </body>

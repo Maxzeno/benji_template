@@ -22,7 +22,7 @@
           max-width: 600px;
           margin: 0 auto;
           padding: 40px 0;
-          text-align: center;
+          text-align: start;
           background-color: #fff;
         "
       >
@@ -54,17 +54,24 @@
               color: #333333;
             "
           >
-            Welcome to Benji!
+            Verify your Account
           </h1>
 
-          <div style="padding-top: 10px">
-            We are thrilled to have you on board.
+          <div style="padding-top: 10px">Dear {{ first_name }},</div>
+          <div style="padding-top: 15px">
+            Thank you for signing up with Benji. To ensure the security of your
+            account, please use the code below to verify your email address: {{
+            verification_code }},
           </div>
           <div style="padding-top: 15px">
-            Start shopping and getting your orders fast and secure.
+            Once your email is verified, you'll be able to shop all your
+            favorite items on our platform and receive important updates about
+            your orders.
           </div>
+          <div style="padding-top: 45px">Best regards,</div>
+          <div style="padding-top: 15px">Benji Team</div>
           <a
-            href=""
+            href="https://benjiexpress.com"
             target="_blank"
             style="
               margin-top: 20px;
@@ -82,7 +89,7 @@
               font-style: normal;
               line-height: 24px;
               width: auto;
-              text-align: center;
+              text-align: start;
               border-left-width: 30px;
               border-right-width: 30px;
             "
@@ -219,7 +226,7 @@
             >Terms of Service
           </a>
         </div>
-        <div style="margin-top: 30px">
+        <!-- <div style="margin-top: 30px">
           <span style="color: #cccccc; font-size: 12px">
             No longer want to receive these emails?&nbsp;</span
           ><a
@@ -228,7 +235,7 @@
             style="text-decoration: underline; color: #cccccc; font-size: 12px"
             >Unsubscribe</a
           >
-        </div>
+        </div> -->
       </div>
     </div>
   </body>
